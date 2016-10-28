@@ -5,6 +5,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import static org.junit.Assert.fail;
+
 /**
  * Created by simon.wilby on 28/10/2016.
  */
@@ -12,6 +14,7 @@ public class ConversionStepDefs {
     @Given("^I want to  convert (\\d+)\\.(\\d+) degree Fahrenheit to Celsius$")
     public void i_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
+        fail("It is failed");
         throw new PendingException();
     }
 
